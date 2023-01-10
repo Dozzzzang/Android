@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+        수평 정렬일때는 자식 요소들은 width 를 나누어 가져야 한다.
+        android:layout_weight="1" => 남는 width 를 서로 나누어 가지는 비율 값이다.
+        남는 크기를 나누어 가지기 때문에 같은 비율로 나누어 가져도 각각의 크기가 항상 같지 않고
+        다를수 있다.
+    -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구라의 버튼1"
+        android:id="@+id/one"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:id="@+id/two"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3"
+        android:id="@+id/three"
+        android:layout_weight="1"/>
+</LinearLayout>
