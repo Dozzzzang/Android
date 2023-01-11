@@ -16,3 +16,4 @@ rootProject.name = "MyAndroid"
 include ':step01activity'
 include ':step01activity2'
 include ':step02layout'
+include ':step03view'
