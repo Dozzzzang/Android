@@ -1,17 +1,17 @@
 package com.example.myandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 
 //app 을 실행했을때 처음 사용자를 대면하는 MainActivity
 //manifests/AndroidManifest.xml 문서에 해당 정보가 있다
 public class MainActivity extends AppCompatActivity {
-    //액티비티가 활성화 될때 inCreate() 메소드가 호출된다.
+    //액티비티가 활성화 될때 onCreate() 메소드가 호출된다.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
