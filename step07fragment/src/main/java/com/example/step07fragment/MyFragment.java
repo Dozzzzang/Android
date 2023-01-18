@@ -18,7 +18,7 @@ import androidx.fragment.app.FragmentActivity;
     - 재활용을 염두에 두고 만드는 경우가 많다.
     - 재활용이라는 것은 여러개의 액티비티에서 활용된다는 의미
 
-   [ Fragment 만드는 방법 ]
+    [ Fragment 만드는 방법 ]
     1. Fragment 클래스를 상속 받는다.
     2. Fragment layout xml 문서를 만든다.
     3. onCreateView() 메소드를 오버라이딩 한다.
@@ -33,7 +33,7 @@ public class MyFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //1. fragment_my.xml 문서를 전개해서 View 를 만든다음
-        View view=inflater.inflate(R.layout.fragment_my, container);
+        View view=inflater.inflate(R.layout.fragment_my, container, false);
         //만든 View 에서 TextView 의 참조값을 얻어낸다.
         textView=view.findViewById(R.id.textView);
         textView.setOnClickListener(this);
