@@ -7,7 +7,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyAndroid">
+        android:theme="@style/Theme.MyAdroid">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/menu_option.xml" />
+
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
