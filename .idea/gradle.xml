@@ -25,6 +25,7 @@
             <option value="$PROJECT_DIR$/step08viewbinding" />
             <option value="$PROJECT_DIR$/step09customview" />
             <option value="$PROJECT_DIR$/step09gameview" />
+            <option value="$PROJECT_DIR$/step10viewpager" />
           </set>
         </option>
       </GradleProjectSettings>
