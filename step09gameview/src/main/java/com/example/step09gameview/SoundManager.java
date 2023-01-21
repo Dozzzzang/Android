@@ -19,6 +19,8 @@ public class SoundManager {
     Context context;
     //볼륨
     int streamVolume;
+    //무음 모드인지 여부
+    boolean isMute=false;
 
     //생성자
     public SoundManager(Context context){
@@ -30,6 +32,10 @@ public class SoundManager {
         //설정된 음악 볼륨값을 읽어와서 필드에 저장한다.
         streamVolume=am.getStreamVolume(AudioManager.STREAM_MUSIC);
     }
+    //무음인지 여부를 전달받는 메소드
+    public void setMute(boolean mute) {
+        isMute = mute;
+    }
 
     //재생할 사운드 등록하는 메소드
     public void addSound(int key, int resId){
@@ -40,6 +46,8 @@ public class SoundManager {
     }
     //사운드를 재생하는 메소드
     public void playSound(int key){
+        //만일 무음 모드면 여기서 메소드 끝내기
+        if(isMute)return;
         //인자로 전달받은 키값을 이용해서 Map 에서 재생할 사운드의 아이디를 읽어온다.
         int soundId=map.get(key);
         //재생하기
@@ -54,6 +62,8 @@ public class SoundManager {
         pool.pause(soundId);
     }
     public void resumeSound(int key){
+        //만일 무음 모드면 여기서 메소드 끝내기
+        if(isMute)return;
         pool.resume(map.get(key));
     }
     //자원 해제 하는 메소드
