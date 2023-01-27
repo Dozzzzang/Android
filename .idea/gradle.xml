@@ -33,6 +33,7 @@
             <option value="$PROJECT_DIR$/step15webview" />
             <option value="$PROJECT_DIR$/step15webview2" />
             <option value="$PROJECT_DIR$/step16asynctask" />
+            <option value="$PROJECT_DIR$/step17httprequest" />
           </set>
         </option>
       </GradleProjectSettings>

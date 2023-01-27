@@ -10,11 +10,30 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="무언가 입력해 보세요..."/>
+        android:hint="무언가 입력해 보세요..."
+        android:id="@+id/editText"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sendBtn"
         android:text="전송"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/testBtn"
+        android:text="테스트버튼"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startBtn"
+        android:text="카운트시작"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ff00"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="0"
+        android:id="@+id/textView"/>
 
 </LinearLayout>
